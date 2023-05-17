@@ -36,7 +36,7 @@ export async function memoriesRoutes(app: FastifyInstance) {
     return memory;
   });
 
-  app.post("/cadastrar", async (request) => {
+  app.post("/save", async (request) => {
     const bodySchema = z.object({
       content: z.string(),
       coverUrl: z.string(),
@@ -55,6 +55,20 @@ export async function memoriesRoutes(app: FastifyInstance) {
     });
 
     return memory;
+  });
+
+  app.delete("/remove/:id", async (request) => {
+    const paramsSchema = z.object({
+      id: z.string().uuid(),
+    });
+
+    const { id } = paramsSchema.parse(request.params);
+
+    await prisma.memory.delete({
+      where: {
+        id,
+      },
+    });
   });
 
   app.put("/atualizar", async () => {});
