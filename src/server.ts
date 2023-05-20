@@ -33,7 +33,7 @@ app.register(memoriesRoutes)
 app
   .listen({
     port: 3030,
-    host: '0.0.0.0', // usar apenas para executar mobile
+    // host: '0.0.0.0', // usar apenas para executar mobile
   })
   .then(() => {
     console.log('🚀 HTTP server running on port http://localhost:3030')
