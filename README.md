@@ -3,7 +3,7 @@
 <br> <br>
 
 # Sobre o projeto:
-Esse é o backend da aplicação Spacetime que foi desenvolvida durante o NLW 12 promovido pela [Rocketseat](https://rocketseat.com.br "Site da Rocketseat").
+Esse é o backend da aplicação Spacetime que foi desenvolvida durante o NLW 12 (trilha ignite) promovido pela [Rocketseat](https://rocketseat.com.br "Site da Rocketseat").
 <br> <br>
 
 A aplicação tem como objetivo guardar recordações de eventos importantes que acontecerão na vida do usuário onde o mesmo realiza login com autenticação via Github
